@@ -1,9 +1,8 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 html {
- 
 }
-body {
+#headerimage {
 }
 title {
   padding: 50px; 
@@ -14,15 +13,10 @@ body {
 }
 #explainervideo {
     margin-left: 200px;
-    padding: 10px;
     margin-top: -250px; 
-    border-style: solid; 
-    border-color: blue; 
 }
 iframe {
   border-style: solid; 
-  border-color: blue; 
-  border-width: 15px; 
 }
 #social {
   list-style-type: none; 
@@ -31,20 +25,21 @@ iframe {
 }
 #facebook {
   width: 50px; 
-  hieght: 50px;
+  height: 50px;
+  hyperlink: https://www.facebook.com; 
+  
 }
 #twitter {
   width: 50px; 
-  hieght: 50px;
+  height: 50px;
 }
 #instagram {
   width: 50px; 
-  hieght: 50px;
+  height: 50px;
 }
-#features {
+#featuresimg {
   border-style: solid; 
   border-radius: 8px; 
-  padding: 50px; 
   position: fixed; 
   right: 100px; 
   top: 70px; 
@@ -53,16 +48,15 @@ iframe {
   -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
   transition: width 2s, height 2s, transform 2s;
 }
-#features:hover {
+#featuresimg:hover {
   width: 300px;
   height: 300px;
   -webkit-transform: rotate(180deg); /* Safari */
   transform: rotate(180deg);
 }
-#testimonials {
+#testimonialsimg {
   border-style: solid; 
   border-radius: 8px; 
-  padding: 50px; 
   position: fixed; 
   right: 100px; 
   top: 400px; 
@@ -71,12 +65,13 @@ iframe {
   -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
   transition: width 2s, height 2s, transform 2s;
 }
-#testimonials:hover {
+#testimonialsimg:hover {
   width: 300px;
   height: 300px;
   -webkit-transform: rotate(180deg); /* Safari */
   transform: rotate(180deg);
 }
+
 #about {
 }
 #content {
@@ -89,3 +84,6 @@ iframe {
   bottom: 800px; 
   background-color: lightblue; 
 }
+
+
+
