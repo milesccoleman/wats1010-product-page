@@ -3,6 +3,7 @@
 html {
 }
 #headerimage {
+  border-radius: 8px; 
 }
 title {
   padding: 50px; 
@@ -15,9 +16,7 @@ body {
     margin-left: 200px;
     margin-top: -250px; 
 }
-iframe {
-  border-style: solid; 
-}
+
 #social {
   list-style-type: none; 
   width: 60px; 
@@ -26,8 +25,6 @@ iframe {
 #facebook {
   width: 50px; 
   height: 50px;
-  hyperlink: https://www.facebook.com; 
-  
 }
 #twitter {
   width: 50px; 
@@ -75,6 +72,7 @@ iframe {
 #about {
 }
 #content {
+  background: rgba(0, 230, 230, .8); 
   width: 810px; 
   border-style: solid; 
   border-radius: 8px; 
@@ -82,8 +80,5 @@ iframe {
   padding: 10px; 
   text-align: center; 
   bottom: 800px; 
-  background-color: lightblue; 
+  color: white; 
 }
-
-
-
