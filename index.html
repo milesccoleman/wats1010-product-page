@@ -8,9 +8,8 @@
         <title><img id="headerimage" class="pageheader" src="design/apiheader.jpg"></title>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js">
-        <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
-        <link rel="stylesheet" href="assets/bootstrap/js/npm.js">
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>        
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="main.css">
         <link rel="favicon" href="design/gameboy_black.ico">
     </head>
@@ -26,8 +25,8 @@
                 <li><a href="index.html#content">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
               </ul>
-              <button type="button" id="login" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="index.html#loginform">Login</button>
-              <button type="button" id="register" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="index.html#registerform">Register</button>
+              <button type="button" id="login" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#loginform">Login</button>
+              <button type="button" id="register" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#registerform">Register</button>
             </div>
           </nav>
             <div id="loginform" class="modal">
@@ -143,6 +142,9 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display == "none";
+    } 
+  if (event.target == modal2) {
+        modal2.style.display = "none";
     }
 }      
 
@@ -160,11 +162,6 @@ span2.onclick = function() {
     modal2.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
 
 </script>
     </body>

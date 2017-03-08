@@ -44,6 +44,9 @@ body {
     display: block;
 		background-image: url("https://media.giphy.com/media/kog2J5GfDdPoY/giphy.gif");
 }
+#mybtn {
+	color: rgb(0, 230, 230); 
+}
 #explainervideo {
     margin-left: 200px; 
     margin-top: -250px; 
@@ -184,4 +187,18 @@ body {
 }
 #registrationwindow {
 	width: 600px; 
+}
+.btn-danger {
+	background-image: -webkit-linear-gradient(top, #7fff00 0%, #66cc00 100%);
+background-image: -o-linear-gradient(top, #7fff00 0%, #66cc00 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, from(#7fff00), to(#66cc00));
+background-image: linear-gradient(to bottom, #7fff00 0%, #66cc00 100%);
+filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#7fff00', endColorstr='#66cc00', GradientType=0);
+filter: progid: DXImageTransform.Microsoft.gradient(enabled = false);
+background-repeat: repeat-x;
+border-color: #66cc00;
+}
+.btn-danger:hover {
+	background-color: #66cc00; 
+	border-color: #66cc00; 
 }
