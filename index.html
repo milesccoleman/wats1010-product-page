@@ -31,7 +31,7 @@
           </nav>
             <div id="loginform" class="modal">
                <div class="modal-content">
-                 <span class="close">&times;</span>
+                 <span class="close2">&times;</span>
                      <form class="form-inline">
                       <label class="sr-only" for="inlineFormInput">Name</label>
                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Username">
@@ -52,7 +52,7 @@
                 <div class="modal-content">
                  <span class="close">&times;</span>
                     <div class="form-group row">
-                              <label for="example-text-input" class="col-2 col-form-label">FIrst Name</label>
+                              <label for="example-text-input" class="col-2 col-form-label">First Name</label>
                               <div class="col-10">
                                 <input class="form-control" type="text" value="Casey" id="example-text-input">
                               </div>
@@ -124,26 +124,6 @@
           </footer>
           <script>
 
-var modal = document.getElementById('loginform');
-
-var btn = document.getElementById("login");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 var modal = document.getElementById('registerform');
 
 var btn = document.getElementById("register");
@@ -163,6 +143,27 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+           
+var modal2 = document.getElementById('loginform');
+
+var btn2 = document.getElementById("login");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 </script>
     </body>
 </html>
