@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="favicon" href="design/gameboy_black.ico">
     </head>
+    <pagewrapper>
     <body>
         <nav id= "navbar" class="navbar navbar-inverse">
           <div class="container-fluid">
@@ -21,7 +22,7 @@
             <a class="navbar-brand" href="#">API Superstore</a>
             </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html#head">Home</a></li>
+                <li><a href="index.html#head">Home</a></li>
                 <li><a href="index.html#content">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
               </ul>
@@ -30,8 +31,8 @@
             </div>
           </nav>
             <div id="loginform" class="modal">
-               <div class="modal-content">
-                 <span class="close2">&times;</span>
+               <div id="loginwindow" class="modal-content">
+                 <span class="close1">&times;</span>
                      <form class="form-inline">
                       <label class="sr-only" for="inlineFormInput">Name</label>
                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Username">
@@ -49,8 +50,8 @@
                 </div>
               </div>
                 <div id="registerform" class="modal">
-                <div class="modal-content">
-                 <span class="close">&times;</span>
+                <div id="registrationwindow" class="modal-content">
+                 <span class="close2">&times;</span>
                     <div class="form-group row">
                               <label for="example-text-input" class="col-2 col-form-label">First Name</label>
                               <div class="col-10">
@@ -81,7 +82,7 @@
                                 <input class="form-control" type="tel" value="6-8 Characters" id="example-tel-input">
                               </div>
                             </div>
-                            
+                            <button type="submit" class="btn btn-primary">Register</button>
                 </div> 
                </div>
               <div>
@@ -122,13 +123,14 @@
               <li><b>Email:</b> apisuperstore@someemailserver.com</li>
             </ul>
           </footer>
+          </pagewrapper>
           <script>
 
-var modal = document.getElementById('registerform');
+var modal = document.getElementById('loginform');
 
-var btn = document.getElementById("register");
+var btn = document.getElementById("login");
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close1")[0];
 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -140,15 +142,15 @@ span.onclick = function() {
 
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display == "none";
     }
-}
-           
-var modal2 = document.getElementById('loginform');
+}      
 
-var btn2 = document.getElementById("login");
+var modal2 = document.getElementById('registerform');
 
-var span = document.getElementsByClassName("close")[0];
+var btn2 = document.getElementById("register");
+
+var span2 = document.getElementsByClassName("close2")[0];
 
 btn2.onclick = function() {
     modal2.style.display = "block";
@@ -159,8 +161,8 @@ span2.onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal2) {
+        modal2.style.display = "none";
     }
 }
 
