@@ -6,68 +6,163 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" contetn="API, HTML, CSS, Superstore"
         <title><img id="headerimage" class="pageheader" src="design/apiheader.jpg"></title>
-        <!-- Bootstrap CSS Framework documentation: http://getbootstrap.com.-->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
+        <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.js">
+        <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
+        <link rel="stylesheet" href="assets/bootstrap/js/npm.js">
         <link rel="stylesheet" href="main.css">
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
         <link rel="favicon" href="design/gameboy_black.ico">
     </head>
     <body>
-        <div>
-          <ul id="social">
-            <li><a href="https://www.facebook.com"> <img id="facebook" class="socialmediaicon" src="design/facebooklogo.png"></a></li>
-            <li><a href="https://www.instagram.com/?hl=en"><img id="instagram" class="socialmediaicon" src="design/instagramlogo.jpg"/></a></li>
-            <li><a href="https://twitter.com"><img id="twitter" class="socialmediaicon" src="design/twitterlogo.png"/></a></li>
+        <nav id= "navbar" class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">API Superstore</a>
+            </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html#head">Home</a></li>
+                <li><a href="index.html#content">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+              <button type="button" id="login" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="index.html#loginform">Login</button>
+              <button type="button" id="register" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="index.html#registerform">Register</button>
+            </div>
+          </nav>
+            <div id="loginform" class="modal">
+               <div class="modal-content">
+                 <span class="close">&times;</span>
+                     <form class="form-inline">
+                      <label class="sr-only" for="inlineFormInput">Name</label>
+                       <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Username">
+                       <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Password">
+                          </div>
+                          <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                              <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Remember me
+                              </label>
+                          </div>
+                              <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+              </div>
+                <div id="registerform" class="modal">
+                <div class="modal-content">
+                 <span class="close">&times;</span>
+                    <div class="form-group row">
+                              <label for="example-text-input" class="col-2 col-form-label">FIrst Name</label>
+                              <div class="col-10">
+                                <input class="form-control" type="text" value="Casey" id="example-text-input">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-search-input" class="col-2 col-form-label">Last Name</label>
+                              <div class="col-10">
+                                <input class="form-control" type="search" value="Smith" id="example-search-input">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                              <div class="col-10">
+                                <input class="form-control" type="email" value="fakeemail@someemailserver.com" id="example-email-input">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-url-input" class="col-2 col-form-label">Username</label>
+                              <div class="col-10">
+                                <input class="form-control" type="url" value="newuser8" id="example-url-input">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-tel-input" class="col-2 col-form-label">Password</label>
+                              <div class="col-10">
+                                <input class="form-control" type="tel" value="6-8 Characters" id="example-tel-input">
+                              </div>
+                            </div>
+                            
+                </div> 
+               </div>
+              <div>
+                <ul id="social">
+                  <li><a href="https://www.facebook.com"> <img id="facebook" class="socialmediaicon" src="design/facebooklogo.png"></a></li>
+                  <li><a href="https://www.instagram.com/?hl=en"><img id="instagram" class="socialmediaicon" src="design/instagramlogo.jpg"/></a></li>
+                  <li><a href="https://twitter.com"><img id="twitter" class="socialmediaicon" src="design/twitterlogo.png"/></a></li>
+                </ul>
+              </div>
+      <div>
+          <ul id="featuresmenu">
+            <li><a href="#"> <img id="facebook" class="socialmediaicon" src="design/icon1.png"></a>API Translator</li>
+            <li><a href="#"><img id="instagram" class="socialmediaicon" src="design/icon2.png"/></a>API Finder</li>
+            <li><a href="#"><img id="twitter" class="socialmediaicon" src="design/icon3.jpg"/></a>API Whosamawhatsit</li>
           </ul>
         </div>
       <div>
-          <video id="explainervideo" width="560" height="315" controls src="design/explainervideo.mp4"></video>
-        <div> <h1>
-            <div id="f1_container">
-<section class="container">
-  <div id="card">
-    <figure class="front"><img id="featuresimg" src="design/features.png"></figure>
-   
-  </div>
-
-           <h1>
-                <div id="f1_container">
-<div id="f2_card" class="shadow">
-  <div class="front face">
-  <img id="testimonialsimg" src="design/testimonials.png">
-                 </h1><br>
+          <ul id="testimonialsmenu">
+            <li><a href="#"><img id="instagram" class="socialmediaicon" src="design/icon1a.png"/></a>Students</li>
+            <li><a href="#"><img id="twitter" class="socialmediaicon" src="design/icon2a.jpg"/></a>Professionals</li>
+          </ul>
         </div>
-
-
-       <content>
+        <div>
+          <video id="explainervideo" width="560" height="315" controls src="design/explainervideo.mp4"></video>
+        <div> 
+          <img id="featuresimg" src="design/features.png">
+          <img id="testimonialsimg" src="design/testimonials.png">
+        </div>
+        <content>
            <div id="content" class="text">
-                <h1>
-                What the API Superstore Does
-                 </h1><br>
-              <about>We source user data from social media, email, and webiste trackign (just liek you could do for free). Then, for a minimal amount of effort on our part we sell access to that data to you. In essence, we are a "middle person" where one is not needed. So, sign up today and pay for nothing!</testimonials>
-          </div>
-      </content>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
+             <h1><b>What the API Superstore Does</b></h1><br>
+               <h3><about id="about">We source user data from social media, email, and website tracking (just like you could do for free). Then, for a minimal amount of effort on our part we sell access to that data to you. In essence, we are a "middle person" where one is not needed. So, sign up today!</about></h3> </div>
+        </content>
+          <footer>
+            <ul id="contact">
+              <li><b>Phone:</b> 555-555-5555</li><p></p>
+              <li><b>Address:</b> 12345 La La Lane, The Northpole, 98765</li><p></p>
+              <li><b>Email:</b> apisuperstore@someemailserver.com</li>
+            </ul>
+          </footer>
+          <script>
 
-        <!-- TODO: Create an area to put the explainer video. -->
+var modal = document.getElementById('loginform');
 
-        <!-- TODO: Create an area to put the long product description. -->
+var btn = document.getElementById("login");
 
-        <!-- TODO: Create an area to put customer testimonials. -->
+var span = document.getElementsByClassName("close")[0];
 
-        <!-- TODO: Create an area to show features. -->
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
+var modal = document.getElementById('registerform');
+
+var btn = document.getElementById("register");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
     </body>
 </html>
