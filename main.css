@@ -82,10 +82,12 @@ html {
   transition-duration: 1s;
   transition-timing-function: linear;
 	-ms-transform: translate(0, 11em); 
+	transition: 20s; 
 }
 #featuresimg:hover {
 	-webkit-transform: translate(0, 11em); 
   transform: translate(1, 11em);
+	transition: 1s; 
 }
 #featuresmenu {
   position: fixed; 
@@ -101,7 +103,7 @@ html {
   border-color: rgba(0, 230, 230, .8); 
 	background-color: white; 
 }
-#featuresmenu:hover + .slidermenu1{
+#featuresmenu:hover {
   position: fixed; 
   padding-bottom: 60px; 
   right: 100px; 
@@ -127,10 +129,12 @@ html {
   transition-duration: 1s;
   transition-timing-function: linear;
 	-ms-transform: translate(0, -11.5em); 
+	transition:20s;
 }
 #testimonialsimg:hover {
  -webkit-transform: translate(0, -11.5em); 
   transform: translate(1, -11.5em);
+	transition:1s;
 }
 #testimonialsmenu {
   position: fixed; 
