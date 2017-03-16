@@ -155,7 +155,7 @@ html {
 }
 #content {
   background: rgb(0, 230, 230); 
-  width: 826px; 
+  width: 50%; 
   border-radius: 8px; 
   padding: 10px; 
   text-align: center; 
@@ -165,7 +165,7 @@ html {
 #contact {
   border-radius: 8px; 
   list-style-type: none; 
-  width: 350px; 
+  width: 20%; 
   background: rgb(0, 230, 230); 
 	color: white; 
   float: right; 

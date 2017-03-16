@@ -1,6 +1,4 @@
-<!doctype html>
-<html>
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +11,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="favicon" href="design/gameboy_black.ico">
     </head>
-    <pagewrapper>
-    <body>
+<body>
         <nav id= "navbar" class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -85,89 +82,46 @@
                             <button type="submit" class="btn btn-primary">Register</button>
                 </div> 
                </div>
-              <div>
-                <ul id="social">
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+       <ul id="social">
                   <li><a href="https://www.facebook.com"> <img id="facebook" class="socialmediaicon" src="design/facebooklogo.png"></a></li>
                   <li><a href="https://www.instagram.com/?hl=en"><img id="instagram" class="socialmediaicon" src="design/instagramlogo.jpg"/></a></li>
                   <li><a href="https://twitter.com"><img id="twitter" class="socialmediaicon" src="design/twitterlogo.png"/></a></li>
                 </ul>
-              </div>
-      <div>
-         <div>
-          <ul id="featuresmenu">
+    </div>
+    <div class="well">
+                <video id="explainervideo" width="560" height="315" controls src="design/explainervideo.mp4"></video>
+    </div>
+    <div id="content" class="col-sm-8 text-left"> 
+                   <h1><b>What the API Superstore Does</b></h1><br>
+               <h3><about id="about">We source user data from social media, email, and website tracking (just like you could do for free). Then, for a minimal amount of effort on our part we sell access to that data to you. In essence, we are a "middle person" where one is not needed. So, sign up today!</about></h3> </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <ul id="featuresmenu">
             <li><a href="apitrans.html"><img id="facebook" class="socialmediaicon" src="design/icon1.png">API Translator</a></li>
             <li><a href="apifinder.html"><img id="instagram" class="socialmediaicon" src="design/icon2.png"/>API Finder</a></li>
             <li><a href="apiwho.html"><img id="twitter" class="socialmediaicon" src="design/icon3.jpg"/>API Whosamawhatsit</a></li>
           </ul>
-        </div>
+          <img class="slidermenu1" id="featuresimg" src="design/features.png">
       </div>
-     
-      <div>
-          <ul id="testimonialsmenu">
+        <ul id="testimonialsmenu">
             <li><a href="students.html"><img id="instagram" class="socialmediaicon" src="design/icon1a.png"/>Students</a></li>
             <li><a href="professionals.html"><img id="twitter" class="socialmediaicon" src="design/icon2a.jpg"/>Professionals</a></li>
           </ul>
-        </div>
-        <div>
-          <video id="explainervideo" width="560" height="315" controls src="design/explainervideo.mp4"></video>
-        <div> 
-          <img class="slidermenu1" id="featuresimg" src="design/features.png">
           <img class="slidermenu2" id="testimonialsimg" src="design/testimonials.png">
-        </div>
-        <content>
-           <div id="content" class="text">
-             <h1><b>What the API Superstore Does</b></h1><br>
-               <h3><about id="about">We source user data from social media, email, and website tracking (just like you could do for free). Then, for a minimal amount of effort on our part we sell access to that data to you. In essence, we are a "middle person" where one is not needed. So, sign up today!</about></h3> </div>
-        </content>
-          <footer>
-            <ul id="contact">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+ <ul id="contact">
               <li><b>Phone:</b> 555-555-5555</li><p></p>
               <li><b>Address:</b> 12345 La La Lane, The Northpole, 98765</li><p></p>
               <li><b>Email:</b> apisuperstore@someemailserver.com</li>
             </ul>
-          </footer>
-          </pagewrapper>
-    
-          <script>
+</footer>
 
-var modal = document.getElementById('loginform');
-
-var btn = document.getElementById("login");
-
-var span = document.getElementsByClassName("close1")[0];
-
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display == "none";
-    } 
-  if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}      
-
-var modal2 = document.getElementById('registerform');
-
-var btn2 = document.getElementById("register");
-
-var span2 = document.getElementsByClassName("close2")[0];
-
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-
-span2.onclick = function() {
-    modal2.style.display = "none";
-}
-
-
-</script>
-    </body>
+</body>
 </html>
