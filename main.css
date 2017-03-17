@@ -50,8 +50,10 @@ html {
 	color: rgb(0, 230, 230); 
 }
 #explainervideo {
-    margin-left: 200px; 
-    margin-top: -250px; 
+	margin-left: 200px;
+	margin-top: -250px; 
+}
+#videoexplainer {
 }
 #social {
   list-style-type: none; 
@@ -240,3 +242,4 @@ html {
 	background-color: #FFD700;
 	color: white; 
 }
+
